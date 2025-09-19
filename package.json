@@ -5,9 +5,9 @@
   "author": "ItzCrazyKns",
   "scripts": {
     "dev": "next dev",
-    "prestart": "node scripts/generate-config.mjs",
     "build": "npm run db:push && next build",
     "start": "next start",
+    "prestart": "node scripts/generate-config.mjs",
     "lint": "next lint",
     "format:write": "prettier . --write",
     "db:push": "drizzle-kit push"
